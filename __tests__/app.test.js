@@ -107,16 +107,16 @@ describe('app routes', () => {
     test('returns all plants', async() => {
 
       const expectation =
-        {
-          'id': 2,
-          'name': 'Cragged Fallpop',
-          'image': 'cragged-fallpop.jpg',
-          'description': 'Generally appear in woodland settings among forest duff.',
-          'fragrant': false,
-          'category': 'annual',
-          'price': 15,
-          'owner_id': 1
-        };
+      {
+        'id': 2,
+        'name': 'Cragged Fallpop',
+        'image': 'cragged-fallpop.jpg',
+        'description': 'Generally appear in woodland settings among forest duff.',
+        'fragrant': false,
+        'category': 'annual',
+        'price': 15,
+        'owner_id': 1
+      };
 
       const data = await fakeRequest(app)
         .get('/plants/2')
@@ -281,3 +281,4 @@ describe('app routes', () => {
     });
   });
 });
+
